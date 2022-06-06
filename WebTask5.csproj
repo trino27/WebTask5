@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>0362215a-967b-4875-8663-9d441311d833</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Kubernetes.Tools.Targets" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BuissnesLayerTask5\BuissnesLayerTask5.csproj" />
+    <ProjectReference Include="..\DataLayerTask5\DataLayerTask5.csproj" />
+    <ProjectReference Include="..\PresentationLayerTask5\PresentationLayerTask5.csproj" />
+  </ItemGroup>
+
+</Project>
